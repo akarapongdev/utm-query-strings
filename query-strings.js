@@ -20,6 +20,8 @@ class QS {
     for (let key in utm_object) {
       if (key === 'utm_medium') {
         prefix = '?';
+      } else {
+        prefix = '&';
       }
       params_path += prefix + key + '=' + this.params.get(key) || '';
     }

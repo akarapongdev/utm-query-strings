@@ -11,9 +11,11 @@
   <script src="/query-strings.js"></script>
   <script type="text/javascript">
     var qs = new QS();
-    var path = qs.setUTM('https://example.com');
+    // var path = qs.setUTM('https://example.com');
     var demo = document.getElementById("demo");
-   demo.setAttribute("href", path);
+    var testLang = qs.setLanguage('https://example.com', 'en');
+    // demo.setAttribute("href", path);
+    console.log(testLang);
   </script>
 </body>
 </html>
